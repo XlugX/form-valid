@@ -9,3 +9,7 @@
     font-weight: 500;
     color: white;
 }
+.button:disabled {
+    background: #535456;
+    cursor: not-allowed;
+}
