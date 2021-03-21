@@ -1,0 +1,23 @@
+.formHeader {
+    margin-bottom: 54px;
+}
+.formTitle {
+    color: #2C2738;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0 5px 8px 5px;
+}
+.authText {
+    font-size: 16px;
+    color: #2C2738;
+    display: flex;
+    align-items: baseline;
+}
+.authLink {
+    color: #0880AE;
+    font-size: 16px;
+    text-decoration: none;
+}
+p {
+    margin: 0 7px;
+}

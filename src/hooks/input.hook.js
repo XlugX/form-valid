@@ -19,3 +19,14 @@ export default function useInput(initValue, validations) {
         ...valid
     }
 }
+export const useCheckbox = (initChecked, validations) => {
+    const [checked, setChecked] = useState(initChecked);
+    const valid = useValidation(checked, validations)
+    const onChange = () => setChecked(!checked);
+
+    return {
+        checked,
+        onChange,
+        ...valid
+    }
+}

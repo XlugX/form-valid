@@ -1,20 +1,19 @@
 .wrapper {
-    max-width: 500px;
-    padding: 10px;
-    text-align: center;
+    max-width: 460px;
+    padding: 40px 30px;
+    text-align: left;
     margin: 40px auto;
     background-color: beige;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0px 0px 35px 4px rgba(78,85,227,0.75);
 }
-.formTitle {
-    color: #1d68f8;
-}
+
 .formControl {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 5px;
+    margin-bottom: 32px;
 }
 .formControlLabel {
     margin: 5px;
