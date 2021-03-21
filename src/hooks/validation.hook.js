@@ -22,10 +22,10 @@ export default function useValidation(value, validations) {
                         break
                     case 'isPhoneErr':
                         const regex = /^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/;
-                        regex.test(String(value).toLowerCase()) ? setPhoneErr(false) : setPhoneErr(true);
+                        regex.test(String(value)) ? setPhoneErr(false) : setPhoneErr(true);
                         break
                     case 'isNameErr':
-                        const reg = /^[a-zA-Z '.-]*$/;
+                        const reg = /^[а-яА-Яa-zA-Z '.-]*$/;
                         reg.test(String(value).toLowerCase()) ? setNameErr(false) : setNameErr(true);
                         break
                 }
@@ -35,12 +35,8 @@ export default function useValidation(value, validations) {
         // eslint-disable-next-line no-mixed-operators
         if (isEmailErr ||  checkedErr || isPhoneErr || isNameErr){
             setValidInput(false)
-            console.log(isPhoneErr)
-            console.log(isEmailErr)
-            console.log(checkedErr)
         }else {
             setValidInput(true)
-
         }
     }, [isEmailErr, checkedErr, isPhoneErr, isNameErr])
     return {
